@@ -1,6 +1,6 @@
 export enum Language {
-  RU = 'ru',
+  // RU = 'ru',
   EN = 'en',
-  BE = 'be',
+  // BE = 'be',
   UA = 'ua',
 }
