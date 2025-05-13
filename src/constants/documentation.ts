@@ -1,22 +1,22 @@
 export const DOCUMENTATION_PARAGRAPHS = [
   {
-    title: 'Мотивация создания аукциона',
+    title: 'Мотивація створення аукціону',
     key: 'motivation',
   },
   {
-    title: 'Основная фича аукциона',
+    title: 'Основна функція аукціону',
     key: 'main-feature',
   },
   {
-    title: 'Поинтовый аукцион',
+    title: 'Поінтовий аукціон',
     key: 'point-auc',
   },
   {
-    title: 'Донатный аукцион',
+    title: 'Донатний аукціон',
     key: 'donate-auc',
   },
   {
-    title: 'Шаровой аукцион',
+    title: 'Аукціон кульок',
     key: 'marbles-auc',
   },
   {
@@ -28,15 +28,15 @@ export const DOCUMENTATION_PARAGRAPHS = [
     key: 'statistic',
   },
   {
-    title: 'История',
+    title: 'Історія',
     key: 'history',
   },
   {
-    title: 'Спонсоры',
+    title: 'Спонсори',
     key: 'sponsors',
   },
   {
-    title: 'Мои контакты',
+    title: 'Мої контакти',
     key: 'contacts',
   },
 ];

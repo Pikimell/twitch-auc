@@ -12,7 +12,7 @@ const TableOfContents: FC<TableOfContentsProps> = ({ paragraphs, url }) => {
   return (
     <div className='table-of-contents'>
       <div className='content'>
-        <div className='title'>Содержание</div>
+        <div className='title'>Зміст</div>
         <ul className='table-of-contents-list'>
           {paragraphs.map(({ title, key }) => (
             <li key={key} className='paragraph'>

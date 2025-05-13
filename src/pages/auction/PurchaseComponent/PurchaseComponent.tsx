@@ -143,7 +143,7 @@ const PurchaseComponent: React.FC<PurchaseComponentProps> = ({
     { 'drag-placeholder': isDragging, 'remove-cost': isRemovePurchase, disabled },
   ]);
   const donationCost = useMemo(
-    () => (pointsRate === 1 ? `${cost}₽` : `${cost * pointsRate} (${cost} ₽)`),
+    () => (pointsRate === 1 ? `${cost}грн` : `${cost * pointsRate} (${cost} грн)`),
     [cost, pointsRate],
   );
   const costString = useMemo(() => {

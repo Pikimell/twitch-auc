@@ -163,7 +163,7 @@ const App: React.FC = () => {
           <div className='grow'>
             <List>{MENU_ITEMS.map(createMenuItem)}</List>
           </div>
-          <AuthorContacts />
+          {/* <AuthorContacts /> */}
         </div>
       </StyledDrawer>
       <Container className='app-content'>

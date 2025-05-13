@@ -15,8 +15,6 @@ import {
 } from '@mui/material';
 import DeleteSweepIcon from '@mui/icons-material/DeleteSweep';
 import { useTranslation } from 'react-i18next';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import SaveIcon from '@mui/icons-material/Save';
 import DownloadIcon from '@mui/icons-material/Download';
 import PercentIcon from '@mui/icons-material/Percent';
@@ -134,20 +132,6 @@ const AucActions: React.FC = () => {
     <Grid container justifyContent='center' className='options-wrapper'>
       <Grid item>
         <Grid container item spacing={4}>
-          <Grid item>
-            <ButtonGroup size='large' className='actions-group'>
-              <Tooltip title='GitHub'>
-                <Link target='_blank' rel='noopener noreferrer' href='https://github.com/Pointauc/pointauc_frontend'>
-                  <Button startIcon={<GitHubIcon />} />
-                </Link>
-              </Tooltip>
-              <Tooltip title={t('auc.supportCreator')}>
-                <Link target='_blank' rel='noopener noreferrer' href='https://www.donationalerts.com/r/kozjar'>
-                  <Button startIcon={<AttachMoneyIcon />} />
-                </Link>
-              </Tooltip>
-            </ButtonGroup>
-          </Grid>
 
           <Grid item>
             <ButtonGroup size='large' className='actions-group'>

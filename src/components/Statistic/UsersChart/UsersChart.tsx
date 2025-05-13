@@ -57,7 +57,7 @@ const UsersChart: FC<UsersChartProps> = ({ scoreboard }) => {
             },
             title: {
               display: true,
-              text: 'Общая сумма ставок',
+              text: 'Загальна сума ставок',
               font: {
                 size: 18,
               },

@@ -111,7 +111,7 @@
     "sendBugReport": "Send bug report",
     "showChances": "Show Winning Chances",
     "supportCreator": "Support Creator",
-    "total": "Total: {{totalSum}} ₽",
+    "total": "Total: {{totalSum}} грн",
     "rules": "Rules"
   },
   "bid": {

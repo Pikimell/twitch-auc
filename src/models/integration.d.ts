@@ -3,7 +3,7 @@ namespace Integration {
 
   import EventEmitter from '@utils/EventEmitter.ts';
 
-  type ID = 'donatePay' | 'da' | 'twitch';
+  type ID = 'donatePay' | 'da' | 'twitch' | 'donatello';
   type BidType = 'donate' | 'points';
 
   interface LoginButtonProps<Flow extends AuthFlow = AuthFlow> {

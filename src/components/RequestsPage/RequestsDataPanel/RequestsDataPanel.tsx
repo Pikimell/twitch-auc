@@ -151,7 +151,7 @@ const RequestsDataPanel: FC = () => {
       <Button variant='outlined' color='primary' startIcon={<AddIcon />} onClick={toggleCreationOpen}>
         Новый список
       </Button>
-      <Tooltip title='Изменение настроек пока что недоступно'>
+      <Tooltip title='Зміна налаштувань поки що недоступна'>
         <span>
           <Button variant='outlined' startIcon={<SettingsIcon />} onClick={toggleSettingsOpen} disabled>
             Настройки

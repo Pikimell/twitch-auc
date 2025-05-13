@@ -68,11 +68,11 @@ class PredictionService {
     const seed = Math.random();
     let restAmount = seed * getTotalSize(slots);
 
-    if (this.preserveLogs) {
-      console.log('оставшиеся лоты:');
-      console.log(slots);
-      console.log(`рандом - ${restAmount}`);
-    }
+    if (this.preserveLogs) { 
+console.log('залишилися елементи:'); 
+console.log(slots); 
+console.log(`рандом - ${restAmount}`); 
+}
 
     return slots.findIndex(({ amount }) => {
       restAmount -= Number(amount);

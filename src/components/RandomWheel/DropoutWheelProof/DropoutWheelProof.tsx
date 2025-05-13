@@ -26,48 +26,47 @@ enum SlotsPresetType {
   Random,
   Current,
 }
-
 const SLOT_PRESETS_OPTIONS: Option[] = [
-  { key: SlotsPresetType.Current, label: 'текущие лоты' },
-  { key: SlotsPresetType.Random, label: 'рандомные лоты' },
+  { key: SlotsPresetType.Current, label: 'поточні елементи' },
+  { key: SlotsPresetType.Random, label: 'рандомні елементи' },
 ];
 
 const columns: GridColDef[] = [
   {
-    headerName: 'Название',
+    headerName: 'Назва',
     field: 'name',
     sortable: true,
     flex: 0.8,
   },
   {
-    headerName: 'Сумма',
+    headerName: 'Сума',
     field: 'amount',
     sortable: true,
     flex: 0.4,
   },
   {
-    headerName: 'Обычное колесо',
+    headerName: 'Звичайне колесо',
     field: 'originalChance',
     sortable: true,
     valueFormatter: percentsFormatter,
     flex: 0.4,
   },
   {
-    headerName: 'Выбывание',
+    headerName: 'Вибуття',
     field: 'dropoutChance',
     sortable: true,
     valueFormatter: percentsFormatter,
     flex: 0.4,
   },
   {
-    headerName: 'Разница в шансах',
+    headerName: 'Різниця у шансах',
     field: 'chanceDifference',
     sortable: true,
     valueFormatter: percentsFormatter,
     flex: 0.4,
   },
   {
-    headerName: 'Победы',
+    headerName: 'Перемоги',
     field: 'winsCount',
     sortable: true,
     flex: 0.4,
@@ -103,36 +102,33 @@ const DropoutWheelProof: FC = () => {
 
   return (
     <div className='dropout-wheel-proof'>
-      <h2>Шансы на победу</h2>
+      <h2>Шанси на перемогу</h2>
       <p className='warning important'>
-        Данное колесо ПОЛНОСТЬЮ соответствует обычному классическому колесу. Чем больше сумма лота, тем меньше шанса
-        вылететь и тем больше шансов победить. Шансы на победу в этом колесе РАВНЫ шансам на победу в обычном.
+        Дане колесо ПОВНІСТТІ відповідає звичайному класичному колесу. Чим більша сума елемента, тим менше шансів
+        вилетіти і тим більше шансів перемогти. Шанси на перемогу в цьому колесі РІВНІ шансам на перемогу у звичайному.
       </p>
-      <p>
-        МАТЕМАТИЧЕСКОЕ доказательство, что здесь нет никакого наеба, приведенно ниже (спасибо чаттерсу Dyaka за помощь в
-        доказательстве):
-      </p>
+      <p>МАТЕМАТИЧНИЙ доказ, що тут немає ніякого наеба, наведено нижче (дякую чаттерсу Dyaka за допомогу в доказі):</p>
       <Button size='large' variant='outlined' className='dropout-wheel-proof-pdf-button'>
         <a target='_blank' href={DropoutProof} rel='noopener noreferrer'>
-          Открыть математическое доказательство
+          Відкрити математичний доказ
         </a>
       </Button>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography variant='body1'>Симуляция колеса на большом числе прокрутов</Typography>
+          <Typography variant='body1'>Симуляція колеса на великій кількості прокруток</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div>
             <p>
-              Данный скрипт симулирует прокруты колеса на выбывание до последнего победителя и выводит разницу с обычным
-              колесом. Вы можете рассчитать шансы и убедиться, что разница стремится к нулю при увеличении итераций.
+              Цей скрипт симулює прокрутки колеса на вибуття до останнього переможця і виводить різницю зі звичайним.
+              колесом. Ви можете розрахувати шанси і переконатися, що різниця прагне нуля зі збільшенням ітерацій.
             </p>
             <p className='warning'>
-              ВНИМАНИЕ! При нажатии на "Рассчитать шансы" сайт может зависнуть на несколько секунд (зависит от
-              количества лотов, количества итераций и вашего пк), просто подождите. Но лучше сохраните лоты на всякий,
-              если у вас 50+ позиций)
+              УВАГА! При натисканні на "Розрахувати шанси" сайт може зависнути на кілька секунд (залежить від кількості
+              елементів, кількості ітерацій та вашого пк), просто зачекайте. Але краще збережіть елементи на кожен, якщо
+              у вас 50+ позицій)
             </p>
-            <p className='warning'>Максимальное количество итераций при включенных подробных логах - 30.</p>
+            <p className='warning'>Максимальна кількість ітерацій при включених докладних логах - 30.</p>
             <div className='row'>
               <RadioButtonGroup
                 options={SLOT_PRESETS_OPTIONS}
@@ -143,21 +139,21 @@ const DropoutWheelProof: FC = () => {
                 className='iteration-input'
                 variant='outlined'
                 margin='dense'
-                label='кол-во итераций'
+                label='кількість ітерацій'
                 onChange={handleIterationsChange}
                 value={iterations}
               />
               <Button variant='contained' color='primary' onClick={predictChances}>
-                рассчитать шансы
+                розрахувати шанси
               </Button>
             </div>
             <FormControlLabel
               control={<Checkbox checked={preserveLogs} onChange={handlePreserveLogsChange} color='primary' />}
-              label='Подробные логи итераций'
+              label='Докладні логи ітерацій'
               className='wheel-controls-checkbox'
             />
             {!!chanceDifference.length && preserveLogs && (
-              <p>Чтобы посмотреть логи нажмите F12 -&gt; вкладка "console"</p>
+              <p>Щоб подивитися логи, натисніть F12 -&gt; вкладка "console"</p>
             )}
             <div style={{ height: '50vh' }} className='history-table'>
               <DataGrid

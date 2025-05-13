@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "7tv": "^0.1.2",
     "@hookform/error-message": "^2.0.1",
     "@kozjar/twitch-emoticons": "^2.3.3",
     "@mui/icons-material": "^5.14.16",
@@ -31,6 +31,7 @@
     "@tiptap/pm": "^2.3.0",
     "@tiptap/react": "^2.3.0",
     "@tiptap/starter-kit": "^2.3.0",
+    "7tv": "^0.1.2",
     "axios": "^1.6.0",
     "centrifuge2": "npm:centrifuge@2",
     "chart.js": "^4.4.0",
@@ -102,7 +103,7 @@
     "prettier": "3.0.3",
     "sass": "^1.69.5",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5",
+    "vite": "^4.5.5",
     "vite-plugin-svgr": "^4.1.0",
     "vite-tsconfig-paths": "^4.2.1"
   }
