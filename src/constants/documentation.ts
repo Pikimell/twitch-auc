@@ -30,13 +30,5 @@ export const DOCUMENTATION_PARAGRAPHS = [
   {
     title: 'Історія',
     key: 'history',
-  },
-  {
-    title: 'Спонсори',
-    key: 'sponsors',
-  },
-  {
-    title: 'Мої контакти',
-    key: 'contacts',
-  },
+  }
 ];

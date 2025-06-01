@@ -8,10 +8,8 @@ export interface LanguageData {
 }
 
 export const SupportedLanguages: LanguageData[] = [
-  { key: Language.EN, name: 'English' },
-  // { key: Language.RU, name: 'Русский' },
-  // { key: Language.BE, name: 'Беларуская' },
   { key: Language.UA, name: 'Українська' },
+  { key: Language.EN, name: 'English' },
 ];
 
 export const getCurrentLanguage = (i18next: i18n): LanguageData =>

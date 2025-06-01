@@ -6,7 +6,7 @@
     },
     "confirm": "Start actions",
     "allActions": "These actions will be applied to channel points redemptions:",
-    "lotBids": "Points for the lot - \"{{name}}\"",
+    "lotBids": "Points for the element - \"{{name}}\"",
     "restBids": "All other points",
     "statistic": {
       "bidsAmount": "Total bids: <b>{{amount}}</b>",
@@ -151,7 +151,8 @@
     "moveFileOrClick": "Drag the file here or click",
     "or": "or",
     "sec": "sec",
-    "unsavedChanges": "Apply unsaved changes?"
+    "unsavedChanges": "Apply unsaved changes?",
+    "addTestPurchase": "Add Test Purchase"
   },
   "history": {
     "addedTo": "Added to",
@@ -199,6 +200,7 @@
       }
     }
   },
+
   "save": {
     "costColumnIndex": "Cost column index",
     "nameColumnIndex": "Name column index",

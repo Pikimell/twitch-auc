@@ -88,8 +88,8 @@ const PurchaseList: React.FC = () => {
   return (
     <div className='purchase-container'>
       <DragBidContext />
-      <Button style={{marginBottom:'15px'}} variant='contained' color='primary' onClick={handleAddTestPurchase}>
-        {t('addTestPurchase')}
+      <Button style={{ marginBottom: '15px' }} variant='contained' color='primary' onClick={handleAddTestPurchase}>
+        {t('common.addTestPurchase')}
       </Button>
       <div className='purchase-list'>
         {sortedPurchases.map((purchase) => (

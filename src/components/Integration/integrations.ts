@@ -5,7 +5,7 @@ import donatello from '@components/Integration/Twitch';
 import { integrationUtils } from '@components/Integration/helpers.ts';
 
 
-const INTEGRATIONS = [twitch ];//da, donatePay
+const INTEGRATIONS = [twitch,da];//da, donatePay
 
 export default INTEGRATIONS;
 

@@ -1,4 +1,34 @@
 {
+  "bidsManagement": {
+    "action": {
+      "accept": "Прийняти",
+      "return": "Повернути"
+    },
+    "confirm": "Розпочати дії",
+    "allActions": "Ці дії будуть застосовані до викупів балів каналу:",
+    "lotBids": "Бали для елемента - \"{{name}}\"",
+    "restBids": "Усі інші бали",
+    "statistic": {
+      "bidsAmount": "Всього ставок: <b>{{amount}}</b>",
+      "totalCost": "Загальна сума: <b>{{amount}}</b>",
+      "largestInvestor": "Найбільший вкладник: <b style=\"color: {{color}}\">{{name}}</b> з <b>{{amount}}</b> балами",
+      "noBids": "Немає ставок у цій категорії"
+    },
+    "requestStatus": {
+      "success": "Дію виконано",
+      "error": "Помилка: ставки не були оброблені або оброблені частково, будь ласка, перевірте вручну."
+    },
+    "modalTitle": {
+      "returnAllExceptWinner": "Повернути все, крім переможця",
+      "returnAllExceptFirst": "Повернути все, крім першого місця",
+      "returnAll": "Повернути всі бали",
+      "acceptAll": "Прийняти всі бали"
+    },
+    "close": "Закрити",
+    "disclaimer": "Це нова функція, тому рекомендується все перевіряти вручну. Якщо виникли помилки, ви можете повідомити про них через <a target=\"_blank\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSe9b82ColWOLyomlrqCGXXjFBWhwL7opZycPYz5v1ovwVdbjA/viewform?usp=sf_link\">форму</a>, і я їх виправлю.",
+    "tooManyBids": "На даний момент не можна обробити більше ніж 9999 ставок"
+  },
+
   "common": {
     "connectTwitch": "Підключити Twitch",
     "connectDA": "Підключити Donation Alerts",
@@ -15,6 +45,7 @@
     "insertImageLink": "Введіть посилання на картинку...",
     "incorrectLink": "Посилання недійсне",
     "authProgress": "Вхід у систему...",
+    "addTestPurchase": "Додати елемент",
     "accountProgress": "Завантаження профілю..."
   },
   "auc": {
@@ -45,6 +76,11 @@
     }
   },
   "settings": {
+    "pageTitle": "Налаштування",
+    "groups": {
+      "auc": "Аукціон",
+      "integrations": "Інтеграції"
+    },
     "settings": "Параметри програми",
     "integrations": "Підключення сервісів",
     "addNewBids": "Додавати автоматично нові ставки",
@@ -58,6 +94,18 @@
       "tokenUpdated": "Токен успішно оновлено",
       "copied": "Токен скопійовано"
     },
+    "integrationCommon": {
+      "integrationCommon": "Загальне",
+      "sortBids": "Сортувати покупки за бали",
+      "title": "Загальне",
+      "insertStrategyLabel": "Автоматичне додавання ставок",
+      "insertStrategy": {
+        "force": "Завжди",
+        "match": "Коли назва повністю збігається",
+        "none": "Ніколи"
+      }
+    },
+
     "appearance": {
       "appearance": "Зовнішній вигляд",
       "primaryColor": "Основний колір",
@@ -90,7 +138,8 @@
       "addTimeOnDonation": "Додавати час при пожертвах"
     },
     "points": {
-      "title": "Бали Twitch"
+      "points": "Бали каналу Twitch",
+      "title": "Twitch"
     },
     "auc": {
       "auc": "Основний аукціон",
@@ -123,7 +172,9 @@
       "addTimeOnLeaderChange": "Додавати час при зміні лідера",
       "addTimeOnNewPosition": "Додавати час за нову позицію",
       "maxAdditionalTime": "Максимальний час додавання",
-      "minTimeRequired": "Не додавати час, якщо залишок більше мінімального"
+      "minTimeRequired": "Не додавати час, якщо залишок більше мінімального",
+      "addOnCondition": "Додавання часу при умові",
+      "notOnCondition": "ЗАБОРОНА додавання часу при умові"
     }
   },
   "wheel": {
@@ -182,6 +233,34 @@
     "extra": "Додатково",
     "trailer": "Попередній перегляд"
   },
+  "menu": {
+    "items": {
+      "auction": {
+        "title": "Аукціон"
+      },
+      "guides": {
+        "title": "Правила"
+      },
+      "history": {
+        "title": "Історія"
+      },
+      "integration": {
+        "title": "Інтеграції"
+      },
+      "settings": {
+        "title": "Налаштування"
+      },
+      "statistics": {
+        "title": "Статистика"
+      },
+      "viewer_orders": {
+        "title": "Viewer orders"
+      },
+      "wheel": {
+        "title": "Колесо шансів"
+      }
+    }
+  },
   "bid": {
     "totalBids": "Усього ставок:",
     "delete": "Видалити ставку",
@@ -206,6 +285,8 @@
     "cost": "Ціна",
     "addedTo": "Додано до",
     "status": "Статус",
-    "returnRedemptions": "Повернути винагороди"
+    "returnRedemptions": "Повернути винагороди",
+    "previousBids": "Список попереднії подій",
+    "fastBidsActions": "Дії з балами каналу:"
   }
 }
