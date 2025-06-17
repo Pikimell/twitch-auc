@@ -1,34 +1,38 @@
 export const DOCUMENTATION_PARAGRAPHS = [
   {
-    title: 'Мотивація створення аукціону',
-    key: 'motivation',
+    title: 'Початок роботи',
+    key: 'instruction',
   },
   {
-    title: 'Основна функція аукціону',
-    key: 'main-feature',
+    title: 'Список елементів',
+    key: 'elements-view',
   },
   {
-    title: 'Поінтовий аукціон',
-    key: 'point-auc',
+    title: 'Додавання ставок',
+    key: 'add-bid',
   },
   {
-    title: 'Донатний аукціон',
-    key: 'donate-auc',
+    title: 'Керування часом',
+    key: 'timer',
   },
   {
-    title: 'Аукціон кульок',
-    key: 'marbles-auc',
+    title: 'Налаштування аукціону',
+    key: 'settings',
   },
   {
-    title: 'Колесо',
+    title: 'Колесо шансів',
     key: 'wheel',
   },
   {
     title: 'Статистика',
-    key: 'statistic',
+    key: 'stats',
   },
   {
     title: 'Історія',
     key: 'history',
-  }
+  },
+  {
+    title: 'Додаткові можливості',
+    key: 'features',
+  },
 ];
