@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { RootState } from '@reducers';
 import { addPurchase, processRedemption, Purchase } from '@reducers/Purchases/Purchases.ts';
 import { addTestPurchase } from '@reducers/Purchases/Purchases.ts'; // Екшен для додавання тестових покупок
+import { NICKNAMES } from '@constants/nicknames.constants.ts';
 import { PURCHASE_SORT_OPTIONS } from '@constants/purchase.constants.ts';
 import donatePay from '@components/Integration/DonatePay';
 
@@ -18,9 +19,9 @@ import './PurchaseList.scss';
 const generateRandomPurchase = (): Purchase => {
   const randomId = Date.now().toString();
   const randomCost = Math.floor(Math.random() * 1000) + 1; // Випадкова сума від 1 до 1000
-  const randomColors = ['#469291', '#FF5733', '#33FF57', '#3357FF', '#FF33A1'];
-  const randomMessages = ['Buy Now!', 'Great Deal!', 'Exclusive Offer!', 'Flash Sale!', 'Limited Time!'];
-  const randomUsername = `User${Math.floor(Math.random() * 1000)}`;
+  const randomColors = ['#469291', '#2788dd', '#aa33ff', '#3357FF', '#c22378'];
+  const randomMessages = NICKNAMES;
+  const randomUsername = ``;
 
   return {
     id: randomId,

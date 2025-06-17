@@ -24,7 +24,7 @@ const IntegrationSubscription: FC = () => {
   const { donate, points } = useMemo(() => integrationUtils.groupBy.type(available), [available]);
 
   return (
-    <Accordion defaultExpanded className='fast-access'>
+    <Accordion  className='fast-access'>
       <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls='panel1a-content' id='panel1a-header'>
         <Grid container alignItems='center'>
           <Typography style={{ flexGrow: 1 }}>{t('auc.integrations')}</Typography>

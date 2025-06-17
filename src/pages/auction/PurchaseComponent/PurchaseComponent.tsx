@@ -161,12 +161,12 @@ const PurchaseComponent: React.FC<PurchaseComponentProps> = ({
     () =>
       marblesAuc ? (
         <>
-          <span>{costString}</span>
+          <span>{costString} грн</span>
           <img src={Marble} alt='marble' width={15} height={15} style={{ marginLeft: 5, marginRight: 5 }} />
           <span>{username}</span>
         </>
       ) : (
-        `${costString} ${username}`
+        `${costString} грн ${username}`
       ),
     [costString, marblesAuc, username, hideAmounts],
   );
